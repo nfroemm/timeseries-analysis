@@ -8,6 +8,7 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Installation Notes](#installation-notes)
 - [Time-Series Forecasting](#time-series-forecasting)
   - [Hodrick-Prescott Filter](#hodrick-prescott-filter)
   - [ARMA](#arma)
@@ -26,6 +27,25 @@ The financial departments of large companies often deal with foreign currency tr
 
 1. Time-Series Forecasting
 2. Linear-Regression Forecasting
+
+---
+
+## Installation Notes
+
+```bash
+# Example installation of Python packages with Anaconda
+(base) $  conda update conda  # make sure you're up to date
+(base) $  conda update --all  # double-check to be sure!
+(base) $  conda create --name timeseries-analysis python=3.7  # create new environment
+(base) $  conda activate timeseries-analysis  # activate the newly created environment
+(timeseries-analysis) $  conda install anaconda hvplot selenium  # most of what we need
+(timeseries-analysis) $  conda install -c conda-forge panel  # plotting + dashboarding
+(timeseries-analysis) $  pip install arch  # ARIMA/GARCH in timeseries analysis
+(timeseries-analysis) $  jupyter-lab  # you should be able to run the code now!
+
+# Note, users of Firefox web browser may need to do this:
+(timeseries-analysis) $  conda install -c conda-forge firefox geckodriver
+```
 
 ---
 
