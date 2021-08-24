@@ -113,6 +113,19 @@ Linear Regression Forecasting:
 
 The installation instructions shown below were verified to work on MacOS 10.15 ("Catalina"), Windows 10, and Ubuntu 20.04 using [Anaconda](https://anaconda.org/) as a Python package manager.  After you install the required Python packages, you should be able to launch a Jupyter Lab/Notebook and run `timeseries-analysis.ipynb` and `regression-analysis.ipynb` yourself -- have fun! :thumbsup: :smile:
 
+### Use the provided `requirements.yml` file
+
+```bash
+# Create an isolated Python environment using the provided `requirements.yml` file
+(base) $  conda env create -f requirements.yml
+(base) $  conda activate timeseries-analysis
+
+# Launch Jupyter Notebook/Lab and run the code!
+(timeseries-analysis) $  jupyter-lab
+```
+
+### Here are the details of the above installation:
+
 ```bash
 # Example installation of Python packages with Anaconda
 (base) $  conda update conda  # make sure you're up to date
